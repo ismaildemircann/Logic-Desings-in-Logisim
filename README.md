@@ -1,5 +1,5 @@
 # Logic-Desings-in-Logisim
-Digital Systems Laboratory		
+# 1) Counter		
 
 Objectives
 •	To demonstrate the count sequence of binary number and the binary-coded decimal (BCD) representation.
@@ -74,3 +74,203 @@ Figure 4. Binary Counter Circuit
 
 
 Figure 5. BCD Counter Circuit
+
+# 2) Math Operations
+
+
+Main Tasarımı
+
+
+Main tasarımında farklı üç tip fonksiyonumuz yer almaktadır. S inputu ile Multiplexer vasıtasıyla yapacağımız işlemi seçiyoruz. N inputu fonksiyondaki değişken sayıdır. Kullanıcı bu input vasıtasıyla hesaplamak istediği fonksiyon değerine ulaşabilir.
+
+S	inputuna karşılık gelen fonksiyonlar:
+
+01 (1) için 4N + 2
+
+10 (2) için MOD (N, 2)
+
+11 (3) için ABS (2*N – 3*2 + 5)
+
+Fonksiyondan gelen outputu Splitter yardımıyla 2 tane 7 Segment Display’e bağladım.
+ 
+A)
+
+
+Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim.
+
+
+
+F=4N+X
+
+ 
+
+Bu fonksiyonda 4*N için Multipler, +X için Adder kullandım. Sonucu 7 Segment Display üzerinden gösterdiğim için Divider ile mod 10 işlemine tabi tuttum ve bölümden geleni soldaki Splitter’a, kalandan geleni sağdaki Splitter’a yönlendirdim.
+ 
+
+A	B	C	D	a	b	c	d	e	f	g	g	F
+												
+0	0	0	0	0	0	0	0	0	0	1	0	1
+												
+0	0	0	1	0	0	0	0	0	1	1	0	1
+												
+0	0	1	0	0	0	0	0	1	0	1	0	1
+												
+0	0	1	1	0	0	0	0	1	1	1	0	1
+												
+0	1	0	0	0	0	0	1	0	0	1	0	1
+												
+0	1	0	1	0	0	0	1	0	1	1	0	1
+												
+0	1	1	0	0	0	0	1	1	0	1	0	1
+												
+0	1	1	1	0	0	0	1	1	1	1	0	1
+												
+1	0	0	0	0	0	1	0	0	0	1	0	1
+												
+1	0	0	1	0	0	1	0	0	1	1	0	1
+												
+1	0	1	0	0	0	1	0	1	0	1	0	1
+												
+1	0	1	1	0	0	1	0	1	1	1	0	1
+												
+1	1	0	0	0	0	1	1	0	0	1	0	1
+												
+1	1	0	1	0	0	1	1	0	1	1	0	1
+												
+1	1	1	0	0	0	1	1	1	0	1	0	1
+												
+1	1	1	1	0	0	1	1	1	1	1	0	1
+												
+
+
+
+
+Verilen doğruluk tablosu 4N + X fonksiyonuna aittir. Tabloda fonksiyonun sadece F = 1 olduğu değerler gösterilmiştir.
+
+F = A’B’C’D’ + A’B’C’D + A’B’CD’ + A’B’CD + A’BC’D’ + A’BC’D + A’BCD’ + A’BCD + AB’C’D’ +AB’C’D+ AB’CD’+ AB’CD + ABC’D’ + ABC’D + ABCD’ + ABCD)
+
+Karnaugh Map ile hesaplanan çıkışın 1 olması bize ifadenin sonucunun 1 olduğunu göstermektedir.
+
+Minterms = ∑ (m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15)
+ 
+B)
+
+
+
+Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim. Bu devredeki Splitter’ın 14 girişe sahip olamasının nedeni main tasarımın da kullanılan Multiplexer’ın diğer fonksiyonlarla uyumlu olması ve ikili 7 Segment Display’e aktarılmasıdır. Bu yüzden kullanılmayan 7-13 arası girişler “none” olarak tutulmuştur.
+
+
+F = MOD(N,X)
+
+
+Bu fonksiyonda 4 bitlik giriş için bir 4 bitlik bir Divider kullandım kalan sonucu Splitter ile outplara aktardım.
+ 
+
+A	B	C	D	F
+				
+0	0	0	0	0
+				
+0	0	0	1	1
+				
+0	0	1	0	0
+				
+0	0	1	1	1
+				
+0	1	0	0	0
+				
+0	1	0	1	1
+				
+0	1	1	0	0
+				
+0	1	1	1	1
+				
+1	0	0	0	0
+				
+1	0	0	1	1
+				
+1	0	1	0	0
+				
+1	0	1	1	1
+				
+1	1	0	0	0
+				
+1	1	0	1	1
+				
+1	1	1	0	0
+				
+1	1	1	1	1
+				
+ 
+
+
+Verilen doğruluk tablosu MOD (N, X) fonksiyonuna aittir. Tabloda fonksiyonun sonuncunun tek sayı olduğu yani outputun 1 olduğu durumları F = 1 olarak varsaydım ve mintermleri buna göre oluşturdum. Çift sayılar için F = 0 kabul ettim.
+
+F = A’B’C’D + A’B’CD + A’BC’D + A’BCD +AB’C’D+ AB’CD + ABC’D + ABCD
+
+Karnaugh Map ile hesaplanan çıkışın D inputu ile aynı olması bize fonskiyonun sonucunun D olduğunu göstermektedir.
+
+Minterms = ∑ (m1, m3, m5, m7, m9, m11, m13, m15)
+ 
+
+
+
+C)
+
+ 
+
+Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim. Bu devredeki Splitter’ın 14 girişe sahip olamasının nedeni main tasarımın da kullanılan Multiplexer’ın diğer fonksiyonlarla uyumlu olması ve ikili 7 Segment Display’e aktarılmasıdır. Divider ile mod 10 işlemine tabi tuttum ve bölümden geleni soldaki Splitter’a, kalandan geleni sağdaki Splitter’a yönlendirdim.
+
+F = ABS (2N-3X+5)
+
+
+ABS’nin içindeki 2N – 3X + 5 işlemini Adder ve Multiplier kullanarak yaptıktan sonra 2N – 3X + 5 sayısını Comperator ile karşılaştırarak sayının negatif mi pozitif mi olduğunu buldum. N-type transistör ile eğer sayı pozitif ise yukarıdaki Splitter’a eğer sayı negatif ise Negator ile 1’s complement değerini alıp sonrasında aşağıdaki Splitter’a yönlendirdim.
+ 
+
+A	B	C	D	F
+				
+0	0	0	0	1
+				
+0	0	0	1	0
+				
+0	0	1	0	0
+				
+0	0	1	1	0
+				
+0	1	0	0	0
+				
+0	1	0	1	0
+				
+0	1	1	0	0
+				
+0	1	1	1	0
+				
+1	0	0	0	0
+				
+1	0	0	1	0
+				
+1	0	1	0	0
+				
+1	0	1	1	0
+				
+1	1	0	0	0
+				
+1	1	0	1	0
+				
+1	1	1	0	0
+				
+1	1	1	1	0
+				
+ 
+
+
+Verilen doğruluk tablosu ABS(2N - 3X + 5) fonksiyonuna aittir. Tabloda fonksiyonun içindeki işlemin sonuncunun negatif olduğu durumları F = 1 olarak varsaydım ve mintermleri buna göre oluşturdum. Pozitif olduğu durumlar için F = 0 kabul ettim.
+
+F = A’B’C’D
+
+Karnaugh Map ile hesaplanan çıkış A’B’C’D olması bize fonskiyonun sonucunun A’B’C’D olduğunu göstermektedir.
+
+Minterms = ∑ (m0)
+ 
+Örnek Program Çıktıkları
+
+
