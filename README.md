@@ -78,8 +78,9 @@ Figure 5. BCD Counter Circuit
 # 2) Math Operations
 
 
-Main Tasarımı
+# Main Tasarımı
 
+![Main Tasarımı](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/Main%20Tasar%C4%B1m%C4%B1.jpg)
 
 Main tasarımında farklı üç tip fonksiyonumuz yer almaktadır. S inputu ile Multiplexer vasıtasıyla yapacağımız işlemi seçiyoruz. N inputu fonksiyondaki değişken sayıdır. Kullanıcı bu input vasıtasıyla hesaplamak istediği fonksiyon değerine ulaşabilir.
 
@@ -93,14 +94,18 @@ S	inputuna karşılık gelen fonksiyonlar:
 
 Fonksiyondan gelen outputu Splitter yardımıyla 2 tane 7 Segment Display’e bağladım.
  
-A)
+# A)
+
+![A](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/A.jpg)
 
 
 Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim.
 
 
 
-F=4N+X
+# F=4N+X
+
+![F=4N+X](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/F%3D4N%2BX.jpg)
 
  
 
@@ -153,15 +158,18 @@ Karnaugh Map ile hesaplanan çıkışın 1 olması bize ifadenin sonucunun 1 old
 
 Minterms = ∑ (m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15)
  
-B)
+# B)
+
+![B](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/B.jpg)
 
 
 
 Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim. Bu devredeki Splitter’ın 14 girişe sahip olamasının nedeni main tasarımın da kullanılan Multiplexer’ın diğer fonksiyonlarla uyumlu olması ve ikili 7 Segment Display’e aktarılmasıdır. Bu yüzden kullanılmayan 7-13 arası girişler “none” olarak tutulmuştur.
 
 
-F = MOD(N,X)
+# F = MOD(N,X)
 
+![F = MOD(N,X)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/F%20%3D%20MOD(N%2CX).jpg)
 
 Bu fonksiyonda 4 bitlik giriş için bir 4 bitlik bir Divider kullandım kalan sonucu Splitter ile outplara aktardım.
  
@@ -214,13 +222,16 @@ Minterms = ∑ (m1, m3, m5, m7, m9, m11, m13, m15)
 
 
 
-C)
+# C)
 
+![C](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/C.jpg)
  
 
 Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim. Bu devredeki Splitter’ın 14 girişe sahip olamasının nedeni main tasarımın da kullanılan Multiplexer’ın diğer fonksiyonlarla uyumlu olması ve ikili 7 Segment Display’e aktarılmasıdır. Divider ile mod 10 işlemine tabi tuttum ve bölümden geleni soldaki Splitter’a, kalandan geleni sağdaki Splitter’a yönlendirdim.
 
-F = ABS (2N-3X+5)
+# F = ABS (2N-3X+5)
+
+![F = ABS (2N-3X+5)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/F%20%3D%20ABS%20(2N-3X%2B5).jpg)
 
 
 ABS’nin içindeki 2N – 3X + 5 işlemini Adder ve Multiplier kullanarak yaptıktan sonra 2N – 3X + 5 sayısını Comperator ile karşılaştırarak sayının negatif mi pozitif mi olduğunu buldum. N-type transistör ile eğer sayı pozitif ise yukarıdaki Splitter’a eğer sayı negatif ise Negator ile 1’s complement değerini alıp sonrasında aşağıdaki Splitter’a yönlendirdim.
@@ -271,6 +282,8 @@ Karnaugh Map ile hesaplanan çıkış A’B’C’D olması bize fonskiyonun son
 
 Minterms = ∑ (m0)
  
-Örnek Program Çıktıkları
+# Örnek Program Çıktıkları
+
+![Örnek Program Çıktıları](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/%C3%96rnek%20Program%20%C3%87%C4%B1kt%C4%B1klar%C4%B1.png)
 
 
