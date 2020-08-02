@@ -1,5 +1,5 @@
 # Logic-Desings-in-Logisim
-# 1) Counter		
+## 1) Counter		
 
 Objectives
 •	To demonstrate the count sequence of binary number and the binary-coded decimal (BCD) representation.
@@ -75,10 +75,10 @@ Figure 4. Binary Counter Circuit
 
 Figure 5. BCD Counter Circuit
 
-# 2) Math Operations
+## 2) Math Operations
 
 
-# Main Tasarımı
+### Main Tasarımı
 
 ![Main Tasarımı](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/Main%20Tasar%C4%B1m%C4%B1.jpg)
 
@@ -94,7 +94,7 @@ S	inputuna karşılık gelen fonksiyonlar:
 
 Fonksiyondan gelen outputu Splitter yardımıyla 2 tane 7 Segment Display’e bağladım.
  
-# A)
+### A)
 
 ![A](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/A.jpg)
 
@@ -103,7 +103,7 @@ Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Deco
 
 
 
-# F=4N+X
+#### F=4N+X
 
 ![F=4N+X](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/F%3D4N%2BX.jpg)
 
@@ -158,7 +158,7 @@ Karnaugh Map ile hesaplanan çıkışın 1 olması bize ifadenin sonucunun 1 old
 
 Minterms = ∑ (m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15)
  
-# B)
+### B)
 
 ![B](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/B.jpg)
 
@@ -167,7 +167,7 @@ Minterms = ∑ (m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14,
 Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim. Bu devredeki Splitter’ın 14 girişe sahip olamasının nedeni main tasarımın da kullanılan Multiplexer’ın diğer fonksiyonlarla uyumlu olması ve ikili 7 Segment Display’e aktarılmasıdır. Bu yüzden kullanılmayan 7-13 arası girişler “none” olarak tutulmuştur.
 
 
-# F = MOD(N,X)
+#### F = MOD(N,X)
 
 ![F = MOD(N,X)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/F%20%3D%20MOD(N%2CX).jpg)
 
@@ -222,14 +222,14 @@ Minterms = ∑ (m1, m3, m5, m7, m9, m11, m13, m15)
 
 
 
-# C)
+### C)
 
 ![C](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/C.jpg)
  
 
 Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim. Bu devredeki Splitter’ın 14 girişe sahip olamasının nedeni main tasarımın da kullanılan Multiplexer’ın diğer fonksiyonlarla uyumlu olması ve ikili 7 Segment Display’e aktarılmasıdır. Divider ile mod 10 işlemine tabi tuttum ve bölümden geleni soldaki Splitter’a, kalandan geleni sağdaki Splitter’a yönlendirdim.
 
-# F = ABS (2N-3X+5)
+#### F = ABS (2N-3X+5)
 
 ![F = ABS (2N-3X+5)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/F%20%3D%20ABS%20(2N-3X%2B5).jpg)
 
