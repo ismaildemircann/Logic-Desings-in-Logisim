@@ -2,7 +2,7 @@
 
 ## [1) Counter](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#1-counter-1)
 ## [2) Math Operations](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#2-math-operations-1)
-### * [Main Tasarımı](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#a-1)
+### [Main Tasarımı](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#main-tasar%C4%B1m%C4%B1)
 ## 1) Counter		
 
 Objectives
