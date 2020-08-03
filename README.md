@@ -1,4 +1,4 @@
-# Logic-Desings in Logisim
+# Logic Desings in Logisim
 
 ## [1) Counter](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#1-counter-1)
 ## [2) Math Operations](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#2-math-operations-1)
