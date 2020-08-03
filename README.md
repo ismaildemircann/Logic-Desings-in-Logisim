@@ -2,14 +2,14 @@
 
 ## [1) Counter](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#1-counter-1)
 ## [2) Math Operations](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#2-math-operations-1)
-- ### [Main Design](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#main-tasar%C4%B1m%C4%B1-1)
-- ### [A)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#a)
-  - #### [F=4N+X](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f4nx)
-- ### [B)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#b)
-  - #### [F = MOD(N,X)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f--modnx)
-- ### [C)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#c)
-  - #### [F = ABS (2N-3X+5)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f--abs-2n-3x5)
-- ### [Sample Program Outputs](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#%C3%B6rnek-program-%C3%A7%C4%B1kt%C4%B1klar%C4%B1)
+- ### [Main Design](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#main-tasar%C4%B1m%C4%B1)
+- ### [A)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#a-1)
+  - #### [F=4N+X](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f4nx-1)
+- ### [B)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#b-1)
+  - #### [F = MOD(N,X)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f--modnx-1)
+- ### [C)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#c-1)
+  - #### [F = ABS (2N-3X+5)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f--abs-2n-3x5-1)
+- ### [Sample Program Outputs](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#%C3%B6rnek-program-%C3%A7%C4%B1kt%C4%B1klar%C4%B1-1)
 
 ## 1) Counter
 
