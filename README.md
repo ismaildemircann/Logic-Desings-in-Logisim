@@ -124,42 +124,25 @@ Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Deco
 Bu fonksiyonda 4*N için Multipler, +X için Adder kullandım. Sonucu 7 Segment Display üzerinden gösterdiğim için Divider ile mod 10 işlemine tabi tuttum ve bölümden geleni soldaki Splitter’a, kalandan geleni sağdaki Splitter’a yönlendirdim.
  
 
-A	B	C	D	a	b	c	d	e	f	g	g	F
+| A | B | C | D | a | b | c | d | e | f | g | g | F |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 |
+| 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 |
+| 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 |
+| 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 |
+| 1 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 1 |
 												
-0	0	0	0	0	0	0	0	0	0	1	0	1
-												
-0	0	0	1	0	0	0	0	0	1	1	0	1
-												
-0	0	1	0	0	0	0	0	1	0	1	0	1
-												
-0	0	1	1	0	0	0	0	1	1	1	0	1
-												
-0	1	0	0	0	0	0	1	0	0	1	0	1
-												
-0	1	0	1	0	0	0	1	0	1	1	0	1
-												
-0	1	1	0	0	0	0	1	1	0	1	0	1
-												
-0	1	1	1	0	0	0	1	1	1	1	0	1
-												
-1	0	0	0	0	0	1	0	0	0	1	0	1
-												
-1	0	0	1	0	0	1	0	0	1	1	0	1
-												
-1	0	1	0	0	0	1	0	1	0	1	0	1
-												
-1	0	1	1	0	0	1	0	1	1	1	0	1
-												
-1	1	0	0	0	0	1	1	0	0	1	0	1
-												
-1	1	0	1	0	0	1	1	0	1	1	0	1
-												
-1	1	1	0	0	0	1	1	1	0	1	0	1
-												
-1	1	1	1	0	0	1	1	1	1	1	0	1
-												
-
-
 
 
 Verilen doğruluk tablosu 4N + X fonksiyonuna aittir. Tabloda fonksiyonun sadece F = 1 olduğu değerler gösterilmiştir.
@@ -186,41 +169,25 @@ Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Deco
 Bu fonksiyonda 4 bitlik giriş için bir 4 bitlik bir Divider kullandım kalan sonucu Splitter ile outplara aktardım.
  
 
-A	B	C	D	F
+| A | B | C | D | F |
+|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 1 | 1 |
+| 0 | 0 | 1 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 1 |
+| 0 | 1 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 1 | 1 |
+| 1 | 0 | 1 | 0 | 0 |
+| 1 | 0 | 1 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 1 | 1 |
 				
-0	0	0	0	0
-				
-0	0	0	1	1
-				
-0	0	1	0	0
-				
-0	0	1	1	1
-				
-0	1	0	0	0
-				
-0	1	0	1	1
-				
-0	1	1	0	0
-				
-0	1	1	1	1
-				
-1	0	0	0	0
-				
-1	0	0	1	1
-				
-1	0	1	0	0
-				
-1	0	1	1	1
-				
-1	1	0	0	0
-				
-1	1	0	1	1
-				
-1	1	1	0	0
-				
-1	1	1	1	1
-				
- 
 
 
 Verilen doğruluk tablosu MOD (N, X) fonksiyonuna aittir. Tabloda fonksiyonun sonuncunun tek sayı olduğu yani outputun 1 olduğu durumları F = 1 olarak varsaydım ve mintermleri buna göre oluşturdum. Çift sayılar için F = 0 kabul ettim.
@@ -249,42 +216,26 @@ Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Deco
 ABS’nin içindeki 2N – 3X + 5 işlemini Adder ve Multiplier kullanarak yaptıktan sonra 2N – 3X + 5 sayısını Comperator ile karşılaştırarak sayının negatif mi pozitif mi olduğunu buldum. N-type transistör ile eğer sayı pozitif ise yukarıdaki Splitter’a eğer sayı negatif ise Negator ile 1’s complement değerini alıp sonrasında aşağıdaki Splitter’a yönlendirdim.
  
 
-A	B	C	D	F
-				
-0	0	0	0	1
-				
-0	0	0	1	0
-				
-0	0	1	0	0
-				
-0	0	1	1	0
-				
-0	1	0	0	0
-				
-0	1	0	1	0
-				
-0	1	1	0	0
-				
-0	1	1	1	0
-				
-1	0	0	0	0
-				
-1	0	0	1	0
-				
-1	0	1	0	0
-				
-1	0	1	1	0
-				
-1	1	0	0	0
-				
-1	1	0	1	0
-				
-1	1	1	0	0
-				
-1	1	1	1	0
+| A | B | C | D | F |
+|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 1 |
+| 0 | 0 | 0 | 1 | 0 |
+| 0 | 0 | 1 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 1 | 0 | 0 |
+| 1 | 0 | 1 | 1 | 0 |
+| 1 | 1 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 1 | 0 |
 				
  
-
 
 Verilen doğruluk tablosu ABS(2N - 3X + 5) fonksiyonuna aittir. Tabloda fonksiyonun içindeki işlemin sonuncunun negatif olduğu durumları F = 1 olarak varsaydım ve mintermleri buna göre oluşturdum. Pozitif olduğu durumlar için F = 0 kabul ettim.
 
