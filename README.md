@@ -9,7 +9,7 @@
   - #### [F = MOD(N,X)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f--modnx-1)
 - ### [C)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#c-1)
   - #### [F = ABS (2N-3X+5)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f--abs-2n-3x5-1)
-- ### [Sample Program Outputs](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#%C3%B6rnek-program-%C3%A7%C4%B1kt%C4%B1klar%C4%B1-1)
+- ### [Sample Program Outputs](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#%C3%B6rnek-program-%C3%A7%C4%B1kt%C4%B1klar%C4%B1)
 
 ## 1) Counter
 
