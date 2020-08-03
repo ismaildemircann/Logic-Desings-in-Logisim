@@ -2,8 +2,16 @@
 
 ## [1) Counter](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#1-counter-1)
 ## [2) Math Operations](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#2-math-operations-1)
-- ### [Main Tasarımı](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#main-tasar%C4%B1m%C4%B1-1)
-## 1) Counter		
+- ### [Main Design](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#main-tasar%C4%B1m%C4%B1-1)
+- ### [A)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#a)
+  - #### [F=4N+X](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f4nx)
+- ### [B)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#b)
+  - #### [F = MOD(N,X)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f--modnx)
+- ### [C)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#c)
+  - #### [F = ABS (2N-3X+5)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#f--abs-2n-3x5)
+- ### [Sample Program Outputs](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/README.md#%C3%B6rnek-program-%C3%A7%C4%B1kt%C4%B1klar%C4%B1)
+
+## 1) Counter
 
 Objectives
 •	To demonstrate the count sequence of binary number and the binary-coded decimal (BCD) representation.
@@ -286,7 +294,7 @@ Karnaugh Map ile hesaplanan çıkış A’B’C’D olması bize fonskiyonun son
 
 Minterms = ∑ (m0)
  
-# Örnek Program Çıktıkları
+### Örnek Program Çıktıkları
 
 ![Örnek Program Çıktıları](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/%C3%96rnek%20Program%20%C3%87%C4%B1kt%C4%B1klar%C4%B1.png)
 
