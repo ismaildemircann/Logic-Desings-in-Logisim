@@ -30,21 +30,21 @@ IC Description:
 A light emitting Diode (LED) is a PN junction diode. When the diode is forward biased, a current flows through the junction and the light is emitted. See Fig.1.
 
  
-![Figure1](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/152120171029_SayTasLabC_1920BHR_Uyg2/Images/Figure1.png)
+![Figure1](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/Images/Figure1.png)
  
 Figure 1
 
 A seven segment LED display contains 7 LEDs. Each LED is called a segment and they are identified as (a, b, c, d, e, f, g) segments Fig.2.
 
 
-![Figure2](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/152120171029_SayTasLabC_1920BHR_Uyg2/Images/Figure2.png)
+![Figure2](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/Images/Figure2.png)
 
 Figure 2. Decimal digits represented by the 7 segments
 
 The display has 7 inputs each connected to an LED segment. All anodes of LEDs are tied together and joined to 5 volts (this type is called common anode type). A current limiting resistance network must be used at the inputs to protect the 7-segment from overloading. BCD inputs are converted into 7 segment inputs (a, b, c, d, e, f, g) by using a decoder, as shown in Fig.3.
 Digital Systems Laboratory		
 
-![Figure3](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/152120171029_SayTasLabC_1920BHR_Uyg2/Images/Figure3.png)
+![Figure3](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/Images/Figure3.png)
 
 Figure 3
 
@@ -75,14 +75,14 @@ I did not use grounding and power and ohm resistance in the experiment because i
 Digital Systems Laboratory		
 	
 
-![Figure4](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/152120171029_SayTasLabC_1920BHR_Uyg2/Images/Figure4.png)
+![Figure4](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/Images/Figure4.png)
 
 
 Figure 4. Binary Counter Circuit
 2.	Build the BCD counter given in figure 5. Check the BCD counting sequence on 7-segment display.
 
 
-![Figure5](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/152120171029_SayTasLabC_1920BHR_Uyg2/Images/Figure5.png)
+![Figure5](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-Counter/Images/Figure5.png)
 
 
 Figure 5. BCD Counter Circuit
@@ -92,7 +92,7 @@ Figure 5. BCD Counter Circuit
 
 ### Main Tasarımı
 
-![Main Tasarımı](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/Main%20Tasar%C4%B1m%C4%B1.jpg)
+![Main Tasarımı](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/images/Main%20Tasar%C4%B1m%C4%B1.jpg)
 
 Main tasarımında farklı üç tip fonksiyonumuz yer almaktadır. S inputu ile Multiplexer vasıtasıyla yapacağımız işlemi seçiyoruz. N inputu fonksiyondaki değişken sayıdır. Kullanıcı bu input vasıtasıyla hesaplamak istediği fonksiyon değerine ulaşabilir.
 
@@ -108,7 +108,7 @@ Fonksiyondan gelen outputu Splitter yardımıyla 2 tane 7 Segment Display’e ba
  
 ### A)
 
-![A](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/A.jpg)
+![A](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/images/A.jpg)
 
 
 Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim.
@@ -117,7 +117,7 @@ Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Deco
 
 #### F=4N+X
 
-![F=4N+X](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/F%3D4N%2BX.jpg)
+![F=4N+X](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/images/F%3D4N%2BX.jpg)
 
  
 
@@ -155,7 +155,7 @@ Minterms = ∑ (m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14,
  
 ### B)
 
-![B](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/B.jpg)
+![B](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/images/B.jpg)
 
 
 
@@ -164,7 +164,7 @@ Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Deco
 
 #### F = MOD(N,X)
 
-![F = MOD(N,X)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/F%20%3D%20MOD(N%2CX).jpg)
+![F = MOD(N,X)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/images/F%20%3D%20MOD(N%2CX).jpg)
 
 Bu fonksiyonda 4 bitlik giriş için bir 4 bitlik bir Divider kullandım kalan sonucu Splitter ile outplara aktardım.
  
@@ -203,14 +203,14 @@ Minterms = ∑ (m1, m3, m5, m7, m9, m11, m13, m15)
 
 ### C)
 
-![C](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/C.jpg)
+![C](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/images/C.jpg)
  
 
 Sonucu 7 Segment Display üzerinden gösterdiğim için oluşturduğum 7447 Decoder’i kullandım. Ve bu çıkışları 14 girişli bir Splitter ile outputa verdim. Bu devredeki Splitter’ın 14 girişe sahip olamasının nedeni main tasarımın da kullanılan Multiplexer’ın diğer fonksiyonlarla uyumlu olması ve ikili 7 Segment Display’e aktarılmasıdır. Divider ile mod 10 işlemine tabi tuttum ve bölümden geleni soldaki Splitter’a, kalandan geleni sağdaki Splitter’a yönlendirdim.
 
 #### F = ABS (2N-3X+5)
 
-![F = ABS (2N-3X+5)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/F%20%3D%20ABS%20(2N-3X%2B5).jpg)
+![F = ABS (2N-3X+5)](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/images/F%20%3D%20ABS%20(2N-3X%2B5).jpg)
 
 
 ABS’nin içindeki 2N – 3X + 5 işlemini Adder ve Multiplier kullanarak yaptıktan sonra 2N – 3X + 5 sayısını Comperator ile karşılaştırarak sayının negatif mi pozitif mi olduğunu buldum. N-type transistör ile eğer sayı pozitif ise yukarıdaki Splitter’a eğer sayı negatif ise Negator ile 1’s complement değerini alıp sonrasında aşağıdaki Splitter’a yönlendirdim.
@@ -247,6 +247,6 @@ Minterms = ∑ (m0)
  
 ### Örnek Program Çıktıkları
 
-![Örnek Program Çıktıları](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/152120171029_SayTasLabC_1920BHR_FinalProje/images/%C3%96rnek%20Program%20%C3%87%C4%B1kt%C4%B1klar%C4%B1.png)
+![Örnek Program Çıktıları](https://github.com/ismaildemircann/Logic-Desings-in-Logisim/blob/master/Logisim-MathOperations/images/%C3%96rnek%20Program%20%C3%87%C4%B1kt%C4%B1klar%C4%B1.png)
 
 
